@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+
+
 .banner {
     height: 94vh;
+}
+
+.img-carros {
+    width: 100%;
+}
+
+.card-css {
+    background-color: #153E6F;
+}
+
+@media (min-width: 500px) {
+    .nav-bar-css {
+        align-items: center;
+    }
 }
