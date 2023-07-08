@@ -1,0 +1,47 @@
+.qualidade {
+    display: flex;
+    margin: 4em 10%;
+    width: auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.qualidade-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 10px;
+    height: 100%;
+}
+
+.qualidade-container h3 {
+    font-size: 2em;
+}
+
+.qualidade-container h4 {
+    color: rgb(54, 80, 95);
+}
+
+.qualidade-container p {
+    margin: 2em 0 ;
+}
+
+.qualidade-container a {
+    text-decoration: none;
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    padding: 1em 2em;
+    color: white;
+    white-space: nowrap;
+    margin-top: auto;
+    transition: .5s;
+}
+
+.qualidade-container a:hover {
+    background-color: rgb(21, 67, 105);
+} 

@@ -1,0 +1,44 @@
+.transportamos {
+    display: flex;
+    text-align: center;
+    margin: 5em 10%;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.transportamos-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 30px;
+    height: 100%;
+}
+
+.transportamos-container h4 {
+    font-size: 2em;
+}
+
+.transportamos-container span {
+    color: var(--cor-destaque);
+    font-weight: 500;
+}
+
+.transportamos-container a {
+        text-decoration: none;
+        background-color: var(--cor-destaque);
+        border-radius: 5px;
+        width: 50%;
+        text-align: center;
+        font-weight: 600;
+        padding: 1em 2em;
+        color: white;
+        margin-top: 2em;
+        white-space: nowrap;
+        transition: .5s;
+}
+
+.transportamos-container a:hover {
+    background-color: rgb(10, 51, 85);
+} 

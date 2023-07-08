@@ -1,11 +1,11 @@
 .banner {
     display: flex;
-    background: url('../assets/banner.png');
+    background: url('../assets//banner-img.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100%;
-    height: 80vh;
-    margin: 4em 6em;
+    height: 90vh;
+    margin: 5em 6em;
 }
 
 .container-banner {
@@ -13,22 +13,22 @@
     flex-direction: column;
     justify-content: center;
     gap: 4em;
-
 }
 
 .banner h1 {
     font-size: 3em;
     width: 50%;
-    color: rgba(17, 32, 75, 0.842);
+    color: var(--cor-texto);
 }
 
 h1 span {
-    color: rgb(53, 137, 216);
+    color: var(--cor-destaque);
 }
 
 .banner-botao {
     text-decoration: none;
     padding: 1em 2em;
+    text-align: center;
     color: white;
     border-radius: 5px;
     width: 20%;
@@ -39,5 +39,5 @@ h1 span {
 }
 
 .banner-botao:hover {
-    background-color: rgb(78, 164, 190);
+    background-color: rgb(38, 103, 156);
 }

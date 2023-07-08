@@ -1,0 +1,28 @@
+.melhor {
+    display: flex;
+    align-items: center;
+    margin: 5em 10%;
+    width: auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.melhor-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 50px;
+    height: 100%;
+}
+
+.melhor-container h3 {
+    font-size: 2em;
+}
+
+.melhor-texto li {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--cor-texto);
+}
