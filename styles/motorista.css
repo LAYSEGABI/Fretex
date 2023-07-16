@@ -59,3 +59,19 @@
 .motorista-texto a:hover {
     background-color: rgb(10, 51, 85);
 } 
+
+
+@media (max-width: 700px) {
+    .motorista-container {
+        flex-direction: column-reverse;
+    }
+
+    .motorista img {
+        width: 100%;
+    }
+
+    .motorista-container a {
+        align-self: center;
+        width: 80%;
+    }
+}

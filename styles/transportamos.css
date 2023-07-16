@@ -26,19 +26,40 @@
 }
 
 .transportamos-container a {
-        text-decoration: none;
-        background-color: var(--cor-destaque);
-        border-radius: 5px;
-        width: 50%;
-        text-align: center;
-        font-weight: 600;
-        padding: 1em 2em;
-        color: white;
-        margin-top: 2em;
-        white-space: nowrap;
-        transition: .5s;
+    text-decoration: none;
+    background-color: var(--cor-destaque);
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    padding: 1em 2em;
+    color: white;
+    margin-top: 2em;
+    white-space: nowrap;
+    transition: .5s;
 }
 
 .transportamos-container a:hover {
     background-color: rgb(10, 51, 85);
-} 
+}
+
+
+@media (max-width: 700px) {
+    .transportamos {
+        flex-direction: column;
+    }
+
+    .transportamos-container {
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .transportamos-container a {
+        width: 80%;
+    }
+
+    .transportamos img {
+        width: 120%;
+    }
+}

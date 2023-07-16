@@ -26,3 +26,14 @@
     font-weight: 500;
     color: var(--cor-texto);
 }
+
+@media (max-width: 700px) {
+    .melhor {
+        flex-direction: column-reverse;
+    }
+
+    .melhor img {
+        width: 100%;
+    }
+}
+
