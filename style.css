@@ -8,6 +8,7 @@
 @import url('styles/melhor.css');
 @import url('styles/motorista.css');
 @import url('styles/transportamos.css');
+@import url('styles/footer.css');
 
 
 * {
@@ -26,11 +27,17 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--cor-texto);
 }
 
+a {
+    text-decoration: none;
+    color: var(--branco-padrao);
+}
 
 /* Scrollbar personalizada */
 

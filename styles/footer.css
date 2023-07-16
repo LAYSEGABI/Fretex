@@ -1,0 +1,53 @@
+footer {
+    background-color: rgb(14, 21, 49);
+    padding: 3em 3em 0 3em;
+}
+
+.container-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.links-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.links-item a {
+    transition: .5s;
+}
+
+.links-item a:hover {
+    color:rgba(112, 89, 67, 0.699);
+  }
+  
+
+.links-titulo {
+    color: rgb(91, 189, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links-item img {
+    width: 1.6em;
+}
+
+
+.container-copyright {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.container-copyright p {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+

@@ -46,7 +46,7 @@
     background-color: rgb(21, 67, 105);
 } 
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .qualidade {
         flex-direction: column;
     }
