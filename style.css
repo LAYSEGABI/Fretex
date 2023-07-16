@@ -16,6 +16,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-destaque: #3d66a5;
+    --cor-texto: #020f22;
+    --branco-padrao: rgb(233, 232, 232);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,11 +29,6 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--cor-texto);
-}
-
-:root {
-    --cor-destaque: #3d66a5;
-    --cor-texto: #020f22;
 }
 
 
@@ -69,3 +70,23 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     transform: translate3d(0,0,0);
 }
+
+
+/* Animação botão whats */
+.butao-whats {
+    animation: float .8s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0)
+    }
+
+    50% {
+        transform: translatey(10px)
+    }
+}
+
+

@@ -1,6 +1,6 @@
 nav {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     display: flex;
@@ -8,11 +8,12 @@ nav {
     padding: 1em 4em;
     gap: 50px;
     background: white;
-    z-index: 999;
+    z-index: 9;
 }
 
-nav img {
+.logo {
     width: 5rem;
+    margin-right: 2em;
 }
 
 nav ul {
@@ -92,8 +93,174 @@ nav ul hr {
     background-color: rgb(38, 103, 156);
 }
 
+
+
+/* Menu hamburguer */
+
+#menu {
+    display: flex;
+    z-index: 12;
+}
+
+#menu-bar {
+    width: 40px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    z-index: 12;
+
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--branco-padrao);
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+    z-index: 12;
+
+}
+
+.nav ul {
+    padding: 0 22px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav li a {
+    color: var(--branco-padrao);
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+    font-weight: 500
+}
+
+.nav li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-bg,
+#menu {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 11;
+    width: 0;
+    height: 0;
+    margin: 22px 0 20px 20px;
+    background: rgb(68, 78, 165);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: rgb(255, 255, 255);
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%, -30%);
+}
+
+
+
 @media (max-width: 1050px) {
+
     nav {
-        background-color: red;
+        gap: 10px;
     }
+
+    .inicio {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+        position: absolute;
+        background-color: transparent;
+        height: 90px;
+        background-color: var(--cor-destaque);
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        right: 20px;
+        top: 22px;
+    }
+
+}
+
+
+
+@media (max-width: 350px) {
+
+    nav {
+        height: 70px;
+    }
+
+    .logo {
+        top: 13px;
+    }
+
+    .menu-bg {
+        position: absolute;
+        top: 13px;
+    }
+
 }
